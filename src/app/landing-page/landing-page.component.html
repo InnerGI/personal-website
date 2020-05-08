@@ -1,0 +1,23 @@
+<div class="landingPage">
+    <!-- TODO: Make sections components and calculate the viewportHeight * ratio in the component -->
+    <section id="welcome" class="displayFlex" [ngStyle]="{'min-height' : viewportHeight * .90 + 'px'}">
+        <div id="left-pane">
+            <div id="name">
+                <span>LOGAN</span>
+                <br/>
+                <span>MARIN</span>
+            </div>
+        </div>
+        <div id="right-pane">
+        </div>
+    </section>
+    <section [ngStyle]="{'min-height' : viewportHeight * .80 + 'px'}">
+        <h1>ABOUT ME</h1>
+    </section>
+    <section [ngStyle]="{'min-height' : viewportHeight * .50 + 'px'}">
+        <h1>THINGS I DO</h1>
+    </section> 
+    <section [ngStyle]="{'min-height' : viewportHeight * .50 + 'px'}">
+        <h1>CONTACT ME</h1>
+    </section>
+</div>
