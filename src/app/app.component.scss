@@ -1,11 +1,19 @@
+$pink: #e4757e;
+$yellow: #fdbc69;
+$navy: #0a1d49;
+
 .displayFlex {
     display: flex;
 }
 
-.vowel-accent-pink {
-    color: #e4757e;
+.text-accent-pink {
+    color: $pink;
 }
 
-.vowel-accent-yellow {
-    color: #fdbc69;
+.text-accent-yellow {
+    color: $yellow;
+}
+
+.text-accent-navy {
+    color: $navy;
 }
