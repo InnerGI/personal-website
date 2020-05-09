@@ -2,7 +2,7 @@ $pink: #e4757e;
 $yellow: #fdbc69;
 $navy: #0a1d49;
 
-.displayFlex {
+.display-flex {
     display: flex;
 }
 
@@ -16,4 +16,30 @@ $navy: #0a1d49;
 
 .text-accent-navy {
     color: $navy;
+}
+
+.section-hero {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+
+    span {
+        color: $pink;
+    }
+}
+
+.hero-border {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 10%;
+    padding-top: .75rem;
+
+    mat-icon {
+        font-size: .4rem;
+    }
+
+    div:not(:last-child) {
+        padding-right: .5rem;
+    }
 }

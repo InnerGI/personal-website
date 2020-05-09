@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { WelcomeComponent } from './landing-page/welcome/welcome.component';
 import { AboutComponent } from './landing-page/about/about.component';
+import { FillPipe } from 'src/shared/fill.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     WelcomeComponent,
-    AboutComponent
+    AboutComponent,
+    FillPipe
   ],
   imports: [
     AppRoutingModule,

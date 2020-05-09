@@ -1,3 +1,32 @@
 <section id="about" [ngStyle]="{'min-height' : viewportHeight * .80 + 'px'}">
-    <h1>GET TO KNOW ME</h1>
+    <div class="section-hero">
+        <span>MY</span> STORY
+    </div>
+    <div class="hero-border">
+        <div *ngFor="let icon of heroSectionBorderCount | fill">
+            <mat-icon class="material-icons">lens</mat-icon>
+        </div>
+    </div>
+    <div id="about-section-content">
+        <div id="about-me">
+            As a professional in the software development field, I've spent the first seven years navigating the broad landscape of software
+            development with General Electric. I've worked as an agile coach (CSM Certified), UX designer, software engineer, and a business analyst. I've gained valuable insight into
+            what it takes to, not only create, but deliver high impact software.
+
+            <br/>
+            <br/>
+
+            Most recently, I've been looking for new leadership opportunities to make a difference in the software design, implementation, and delivery of high profile products. During
+            my time as a senior software engineer I was the lead front end developer on a product serving 13,000 users in GE. I was responsible for driving the direction and standards
+            of our Angular web application, and we delivered a 95% reduction in business process cycle time related to asset change management. The impact software makes to a business
+            is what fuels my passion in this field.
+
+            <br/>
+            <br/>
+
+            Outside of work, I'm a dedicated husband and father to my wonderful family, avid video game player, and a dungeon master for a group of close friends. There isn't
+            a Tottenham Hotspur or New Orleans Saints game that I'll miss. Still to this day, even at my age, I'm always planning the next trip to Disney World. Recently having a daughter
+            has been a excellent excuse for my Disney fandom.
+        </div>
+    </div>
 </section>
