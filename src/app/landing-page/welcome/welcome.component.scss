@@ -1,13 +1,9 @@
-@use '../../app.component.scss';
+@use '../../app.component';
 
 #welcome {
     flex: 1;
     display: flex;
     justify-content: center;
-
-    h1 {
-        padding-top: 10rem;
-    }
 
     #left-pane {
         display: flex;
