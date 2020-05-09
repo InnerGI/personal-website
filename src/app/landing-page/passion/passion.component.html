@@ -9,7 +9,7 @@
     </div>
     <div id="passion-section-content">
         <div id="software">
-            <mat-icon class="material-icons">laptop_mac</mat-icon>
+            <mat-icon [@hoverPassion]=engineerState class="material-icons" (mouseover)="onHover('engineerState')" (mouseleave)="onHover('engineerState')">laptop_mac</mat-icon>
             <div class="descriptions">
                 <span class="text-accent-pink">SOFTWARE ENGINEER</span>
                 <hr>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div id="family">
-            <mat-icon class="material-icons">emoji_emotions</mat-icon>
+            <mat-icon [@hoverPassion]=familyState class="material-icons" (mouseover)="onHover('familyState')" (mouseleave)="onHover('familyState')">emoji_emotions</mat-icon>
             <div class="descriptions">
                 <span class="text-accent-pink">HUSBAND & FATHER</span>
                 <hr>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div id="golf">
-            <mat-icon class="material-icons">golf_course</mat-icon>
+            <mat-icon [@hoverPassion]=golferState class="material-icons" (mouseover)="onHover('golferState')" (mouseleave)="onHover('golferState')">golf_course</mat-icon>
             <div class="descriptions">
                 <span class="text-accent-pink">GOLFER</span>
                 <hr>
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div id="game">
-            <mat-icon class="material-icons">gamepad</mat-icon>
+            <mat-icon [@hoverPassion]=gamerState class="material-icons" (mouseover)="onHover('gamerState')" (mouseleave)="onHover('gamerState')">gamepad</mat-icon>
             <div class="descriptions">
                 <span class="text-accent-pink">GAMER</span>
                 <hr>
