@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { WelcomeComponent } from './landing-page/welcome/welcome.component';
+import { AboutComponent } from './landing-page/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent
   ],
   imports: [
     AppRoutingModule,
