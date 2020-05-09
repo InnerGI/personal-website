@@ -1,0 +1,70 @@
+@use '../../app.component.scss';
+
+#passion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: #0a1d49;
+
+    #passion-section-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 0rem;
+
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: #DEDEDE;
+
+            .descriptions {
+                width: 20rem;
+                padding: 1rem 0rem;
+                text-align: center;
+                font-size: 1rem;
+
+                hr {
+                    width: 50%;
+                }
+
+                .description-details {
+                    text-align: left;
+                    font-size: .75rem;
+                    word-spacing: .4rem;
+                }
+            }
+
+            mat-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10rem;
+                width: 10rem;
+                font-size: 5rem;
+                text-align: center;
+                border: 1px solid #DEDEDE;
+                border-radius: 10rem;
+            }
+        }
+
+        div:not(:last-child) {
+            padding-right: 2rem;
+        }
+            
+        // mat-icon {
+        //     height: 6rem;
+        //     width: 6rem;
+        //     font-size: 6rem;
+        //     color: #DEDEDE;
+        //     border: 1px solid #DEDEDE;
+        // }
+
+        // mat-icon:not(:last-child) {
+        //     padding-right: 6rem;
+        // }
+        
+    }
+}
