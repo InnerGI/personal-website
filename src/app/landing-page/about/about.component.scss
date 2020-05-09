@@ -1,8 +1,23 @@
-@use '../../../sass/variables.scss';
+@use '../../app.component.scss';
 
 #about {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
     background-color: #fdbc69;
+
+    #about-section-content {
+        display: flex;
+        padding: 2rem;
+        width: 50%;
+
+        #about-me {
+            line-height: 2rem;
+            text-align: center;
+        }
+    }
+
+        
 }
