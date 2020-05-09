@@ -6,6 +6,10 @@ $navy: #0a1d49;
     display: flex;
 }
 
+.text-accent-white {
+    color: #DEDEDE;
+}
+
 .text-accent-pink {
     color: $pink;
 }
@@ -32,7 +36,6 @@ $navy: #0a1d49;
 
     display: flex;
     justify-content: flex-start;
-    width: 10%;
     padding-top: .75rem;
 
     mat-icon {
