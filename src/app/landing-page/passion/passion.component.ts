@@ -1,7 +1,10 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ViewportRuler } from '@angular/cdk/scrolling';
+<<<<<<< HEAD
 import { softwareEngingeerDesc, familyDesc, gamerDesc, golferDesc } from './passion.constants';
+=======
+>>>>>>> c9bd211f4ca3948a740a0572397fbc808213f2a5
 
 @Component({
   selector: 'app-passion-section',
