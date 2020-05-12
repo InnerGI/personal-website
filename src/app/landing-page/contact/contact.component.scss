@@ -1,0 +1,23 @@
+@use '../../app.component.scss';
+
+.section-hero {
+    span {
+        color: #0a1d49;
+    }
+}
+
+#contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: #e4757e;
+
+    #contact-section-content {
+        button {
+            background-color: #0a1d49;
+            color: #DEDEDE
+        }
+    }
+}

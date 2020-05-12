@@ -1,5 +1,11 @@
 @use '../../app.component.scss';
 
+.section-hero {
+    span {
+        color: #fdbc69;
+    }
+}
+
 #passion {
     flex: 1;
     display: flex;

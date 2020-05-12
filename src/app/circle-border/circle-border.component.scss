@@ -1,0 +1,14 @@
+.hero-border {
+
+    display: flex;
+    justify-content: flex-start;
+    padding-top: .75rem;
+
+    mat-icon {
+        font-size: .4rem;
+    }
+
+    div:not(:last-child) {
+        padding-right: .5rem;
+    }
+}

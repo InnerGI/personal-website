@@ -2,16 +2,12 @@
     <div class="section-hero text-accent-white">
         THING I DO FOR <span>WORK</span> AND <span>FUN</span>
     </div>
-    <div class="hero-border">
-        <div *ngFor="let icon of 20 | fill">
-            <mat-icon class="material-icons">lens</mat-icon>
-        </div>
-    </div>
+    <app-circle-border></app-circle-border>
     <div id="passion-section-content">
         <div id="software">
             <mat-icon [@hoverPassion]=engineerState class="material-icons" (mouseover)="onHover('engineerState')" (mouseleave)="onHover('engineerState')">laptop_mac</mat-icon>
             <div class="descriptions">
-                <span class="text-accent-pink">SOFTWARE ENGINEER</span>
+                <span class="text-accent-yellow">SOFTWARE ENGINEER</span>
                 <hr>
                 <div class="description-details">
                     {{engineerDesc}}
@@ -21,7 +17,7 @@
         <div id="family">
             <mat-icon [@hoverPassion]=familyState class="material-icons" (mouseover)="onHover('familyState')" (mouseleave)="onHover('familyState')">emoji_emotions</mat-icon>
             <div class="descriptions">
-                <span class="text-accent-pink">HUSBAND & FATHER</span>
+                <span class="text-accent-yellow">HUSBAND & FATHER</span>
                 <hr>
                 <div class="description-details">
                     {{familyDesc}}
@@ -31,7 +27,7 @@
         <div id="golf">
             <mat-icon [@hoverPassion]=golferState class="material-icons" (mouseover)="onHover('golferState')" (mouseleave)="onHover('golferState')">golf_course</mat-icon>
             <div class="descriptions">
-                <span class="text-accent-pink">GOLFER</span>
+                <span class="text-accent-yellow">GOLFER</span>
                 <hr>
                 <div class="description-details">
                     {{golferDesc}}
@@ -41,7 +37,7 @@
         <div id="game">
             <mat-icon [@hoverPassion]=gamerState class="material-icons" (mouseover)="onHover('gamerState')" (mouseleave)="onHover('gamerState')">gamepad</mat-icon>
             <div class="descriptions">
-                <span class="text-accent-pink">GAMER</span>
+                <span class="text-accent-yellow">GAMER</span>
                 <hr>
                 <div class="description-details">
                     {{gamerDesc}}
