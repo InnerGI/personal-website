@@ -1,6 +1,10 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ViewportRuler } from '@angular/cdk/scrolling';
+<<<<<<< HEAD
+import { softwareEngingeerDesc, familyDesc, gamerDesc, golferDesc } from './passion.constants';
+=======
+>>>>>>> c9bd211f4ca3948a740a0572397fbc808213f2a5
 
 @Component({
   selector: 'app-passion-section',
@@ -28,22 +32,28 @@ import { ViewportRuler } from '@angular/cdk/scrolling';
 export class PassionComponent implements OnInit {
 
     public engineerState: string;
+    public engineerDesc: string;
     public familyState: string;
+    public familyDesc: string;
     public golferState: string;
+    public golferDesc: string;
     public gamerState: string;
+    public gamerDesc: string;
     public heroSectionBorderCount: number;
     public viewportHeight: number;
 
     constructor(private viewportRuler: ViewportRuler) {
         this.engineerState = 'initial';
+        this.engineerDesc = softwareEngingeerDesc;
         this.familyState = 'initial';
+        this.familyDesc = familyDesc;
         this.golferState = 'initial';
+        this.golferDesc = golferDesc;
         this.gamerState = 'initial';
+        this.gamerDesc = golferDesc;
     }
 
     ngOnInit(): void {
-        this.viewportHeight = this.viewportRuler.getViewportSize().height;
-
         // TODO: Recalc with window resize event;
         // Based on viewport width and 10% border width, calculate how many icons we can fit sized at .4rem and spaced with .5rem (i.e .9);
         this.heroSectionBorderCount = Math.ceil((this.viewportRuler.getViewportSize().width * .1) / (16 * .9));
@@ -52,13 +62,13 @@ export class PassionComponent implements OnInit {
     // TODO: Hover event for Icons, toggle to white background/ pink icon/ animate.
     public onHover(stateName: string): void {
         switch (stateName) {
-            case 'engineerState':
+            case 'engineer':
                 this.engineerState = this.engineerState === 'initial' ? 'final' : 'initial';
                 break;
-            case 'familyState':
+            case 'family':
                 this.familyState = this.familyState === 'initial' ? 'final' : 'initial';
                 break;
-            case 'golferState':
+            case 'golfer':
                 this.golferState = this.golferState === 'initial' ? 'final' : 'initial';
                 break;
             case 'gamerState':
